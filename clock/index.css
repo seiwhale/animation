@@ -1,0 +1,91 @@
+*{margin:0;padding:0}
+.main{
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #999;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.14rem;
+    margin: auto;
+}
+.page{
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.year{
+    width: 4.03rem;
+    height: 0.4rem;
+    color: #fff;
+    text-align: right;
+    line-height: 0.4rem;
+    margin-top: 3.55rem;
+    position: relative;
+    overflow: hidden;
+}
+.year::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+}
+.month{
+    width: 2rem;
+    height: 0.4rem;
+    top: 3.55rem;
+    left: 2.75rem;
+    line-height: 0.40rem;
+    position: absolute;
+    transition: all 1s linear;
+}
+.date{
+    width: 3rem;
+    height: 0.40rem;
+    top: 3.55rem;
+    left: 2.25rem;
+    line-height: 0.40rem;
+    position: absolute;
+    transition: all 1s linear;
+}
+.hour{
+    width: 4rem;
+    height: 0.40rem;
+    top: 3.55rem;
+    left: 1.75rem;
+    line-height: 0.40rem;
+    position: absolute;
+    transition: all 1s linear;
+}
+.min{
+    width: 5rem;
+    height: 0.40rem;
+    top: 3.55rem;
+    left: 1.25rem;
+    line-height: 0.40rem;
+    position: absolute;
+    transition: all 1s linear;
+}
+.sec{
+    width: 6rem;
+    height: 0.40rem;
+    top: 3.55rem;
+    left: 0.75rem;
+    line-height: 0.40rem;
+    position: absolute;
+    transition: transform 1s linear;
+}
+.br{
+    position: absolute;
+    z-index: 999;
+    bottom: 0.06rem;
+    right: 0rem;
+    height: 1px;
+    width: 3.34rem;
+    background: #fff;
+    transform: translateX(100%);
+    transition: all 0.5s linear 0.5s;
+}
