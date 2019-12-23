@@ -1,0 +1,24 @@
+<title>
+	扫雷
+</title>
+<!-- ondragstart:防拖拽生成新页面 oncontextmenu:屏蔽右键菜单-->
+
+<body ondragstart='return false' oncontextmenu='self.event.returnValue=false'>
+	<div id='bar'>
+		<span class='bar'>
+      剩余雷数：
+      <label id='count'>
+        0
+      </label>
+    </span>
+    <span class='bar'>
+      计时：
+      <label id='time'>
+        0
+      </label>
+      s
+    </span>
+  </div>
+  <table id='grid'>
+  </table>
+</body>
